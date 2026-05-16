@@ -51,6 +51,8 @@ x2 = tk.StringVar()
 t = tk.StringVar()
 t1 = tk.StringVar()
 t2 = tk.StringVar()
+gt = tk.StringVar()
+gt1 = tk.StringVar()
 
 #checkbutton
 cb = tk.Checkbutton(Hotel,text='Paneer',font='algerian 16',fg='black',variable=p, command=cbb).place(x=120,y=355)
@@ -105,6 +107,7 @@ rt1.place(x=500,y=385)
 rt2=tk.Entry(Hotel,bd="2",textvariable=x2)
 rt2.place(x=500,y=415)
 
+#Total
 tk.Label(Hotel,text="Total", font="Algerian 14",fg="black").place(x=720,y=320)
 
 tot=tk.Entry(Hotel,bd="2",textvariable=t)
@@ -115,5 +118,11 @@ tot1.place(x=700,y=385)
 
 tot2=tk.Entry(Hotel,bd="2",textvariable=t2)
 tot2.place(x=700,y=415)
+
+#Grand Total
+tk.Label(Hotel,text="Grand Total", font="algerian 16", fg="black").place(x=370, y=500)
+
+gt1=tk.Entry(Hotel,bd="3",textvariable=gt1)
+gt1.place(x=550,y=500)
 
 Hotel.mainloop()
