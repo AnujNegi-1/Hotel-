@@ -125,4 +125,9 @@ tk.Label(Hotel,text="Grand Total", font="algerian 16", fg="black").place(x=370, 
 gt1=tk.Entry(Hotel,bd="3",textvariable=gt1)
 gt1.place(x=550,y=500)
 
+#Click-Button
+sub=tk.Button(Hotel,text="Submit",font=("Ariel",12,"bold"),fg='#DB1343',bd=1,height=2,width=6,command=su)
+sub.place(x=400,y=600)
+
+
 Hotel.mainloop()
